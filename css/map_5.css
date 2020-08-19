@@ -368,6 +368,11 @@ header .header .gnb a img {
   height: 25vh;
 }
 
+.main_content .list ul li .box img:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
 .main_content .list ul li .text {
   text-align: left;
   margin: 25px 0;
