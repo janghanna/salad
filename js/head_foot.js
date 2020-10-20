@@ -8,28 +8,27 @@ $(function () {
         const nav = document.querySelector('nav');
         const gnb = document.querySelector('.gnb');
 
-       head.addEventListener('click', function () {
+        head.addEventListener('click', function () {
             head.classList.toggle('active');
             nav.classList.toggle('active');
             gnb.classList.toggle('active');
         });
     }
-    
-      $('.header nav a').on('click',function(e){
-                e.preventDefault(); 
-                var type = $(this).attr('href'); 
-                
-                $('.hailli nav a').removeClass('active');
-                $(this).addClass('active');
-            });
-    
-     $('.header .gnb a').on('click',function(e){
-                e.preventDefault(); 
-                var type = $(this).attr('href'); 
-                
-                $('.header .gnb a').removeClass('active');
-                $(this).addClass('active');
-            });
-    //end  
 
+    $('.header nav a').on('click', function (e) {
+        e.preventDefault();
+        var type = $(this).attr('href');
+
+        $('.hailli nav a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.header .gnb a').on('click', function (e) {
+        e.preventDefault();
+        var type = $(this).attr('href');
+
+        $('.header .gnb a').removeClass('active');
+        $(this).addClass('active');
+    });
+    //end 
 });

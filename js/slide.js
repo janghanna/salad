@@ -1,48 +1,47 @@
-window.addEventListener('DOMContentLoaded', function () {
-    //변수
-    var s = document.querySelector('.slide figure');
-    var img = document.querySelectorAll('.slide img');
-//    var btn = document.querySelectorAll('.swiper button');
+$(function fadeInOut() {
+    $('.slide figure img').not(':first').hide();
     var idx = 0;
     var loop;
 
-
-    function prev() {
-        if (idx != 0) idx--;
-        s.style = "left:" + (-idx * 100) + "%";
+    //img change
+    function fade(p) {
+        $('.slide figure img').eq(idx).fadeOut(1500);
+        (p == 'next' || p == undefined) ? idx++ : idx--;
+        update();
+        $('.slide figure img').eq(idx).fadeIn(1500);
     }
-
-    function next() {
-        if (idx != img.length) idx++;
-        s.style = "left:" + (-idx * 100) + "%";
-       
-        if (idx == 3) {
-            idx=0;
-             s.style = "transition:"+"0s", "left:" + (-idx * 100) + "%";
-        }
+    //idx setting
+    function update() {
+        var len = $('.slide figure img').length;
+        if (idx >= len) idx = 0;
+        if (idx == -1) idx = len - 1;
+        $('code').text('idx = ' + idx);
     }
-   
-//    function btn(){
-//        if ((this).index() == 0){
-//            prev('prev');
-//        }else{
-//            next('next');
-//        }
-//    }
-
+    //auto clear
     function clearFun() {
         clearInterval(loop);
     }
-
-    function innerHeight() {
-        loop = setInterval(next, 3000);
+    //auto fade
+    function interFun() {
+        loop = setInterval(fade, 3000);
+    }
+    //prev next
+    function btn() {
+        if ($(this).index() == 0) {
+            fade('prev');
+        } else {
+            fade('next');
+        }
     }
 
-//    btn[0].addEventListener('click', prev);
-//    btn[1].addEventListener('click', next);
+    //mouse over out (auto start, auto stop)
+    $('.fade div, span').on({
+        mouseenter: clearFun,
+        mouseleave: interFun
+    });
 
-    innerHeight();
+    //prev,next click event
+    $('span').on('click', btn);
 
-
-    console.log();
+    interFun();
 });
