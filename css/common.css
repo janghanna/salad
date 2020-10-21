@@ -59,8 +59,10 @@ header .header nav ul li a {
 }
 
 header .header nav ul li .sub {
+    display: none;
+
     position: absolute;
-    top: 10px;
+    top: 100%;
     left: 0;
     z-index: 100;
     width: 100%;
@@ -70,9 +72,8 @@ header .header nav ul li .sub {
     border-top: 1px solid rgba(225, 225, 225, 0.2);
     text-align: center;
     padding-top: 10px;
-    opacity: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    opacity: 1;
+
 }
 
 header .header nav ul li .sub a {
@@ -93,16 +94,9 @@ header .header nav ul li .sub a:nth-of-type(2) {
     margin-top: 15px;
 }
 
-header .header nav ul li a:hover {
+header .header nav ul li a:hover,
+header .header nav ul li a.active{
     color: #68b445;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-}
-
-header .header nav ul:hover .sub {
-    opacity: 1;
-    top: 100%;
-    width: 100%;
 }
 
 header .header .gnb {
@@ -123,38 +117,6 @@ header .header .gnb a {
 header .header .gnb a img {
     width: 24px;
     height: 24px;
-}
-
-body .sns {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 95px;
-}
-
-body .sns h3 {
-    font-size: 38px;
-    line-height: 1.1em;
-    text-align: center;
-    vertical-align: middle;
-}
-
-body .sns h3 strong {
-    color: #68b445;
-    margin: 0;
-}
-
-body .sns h3 span {
-    color: #333;
-    margin-left: 8px;
-}
-
-body .sns h3 a {
-    display: inline-block;
-}
-
-body .sns h3 a img {
-    width: 41px;
-    vertical-align: middle;
 }
 
 body .footer {

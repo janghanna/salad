@@ -63,23 +63,24 @@ body .slide-container .slide figure img:nth-of-type(3) {
 }
 
 body .slide-container .fade {
-  color: red;
+  color: greenyellow;
   font-size: 50px;
   position: absolute;
   top: 50%;
-  width: 95%;
+  width: 100%;
   cursor: pointer;
-  margin: 0 auto;
 }
 
 body .slide-container .fade .prev {
   float: left;
+  margin-left: 3%;
   background: none;
   border: none;
 }
 
 body .slide-container .fade .next {
   float: right;
+  margin-right: 3%;
   background: none;
   border: none;
 }
@@ -137,5 +138,37 @@ body figure:nth-of-type(3) figcaption p {
 
 body figure:nth-of-type(3) figcaption p strong {
   color: #fff;
+}
+
+body .sns {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 95px;
+}
+
+body .sns h3 {
+  font-size: 38px;
+  list-style: 1.1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body .sns h3 strong {
+  color: #68b445;
+  margin: 0;
+}
+
+body .sns h3 span {
+  color: #333;
+  margin-left: 8px;
+}
+
+body .sns h3 a {
+  display: inline-block;
+}
+
+body .sns h3 a img {
+  width: 41px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=index.css.map */

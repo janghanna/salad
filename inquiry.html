@@ -58,8 +58,8 @@
 
         <form>
             <div class="form_t1">
-                <p>개인정보처리방침</p>
                 <fieldset>
+                    <legend>개인정보처리방침</legend>
                     <div class="priv">
                         ㈜투고샐러드의 [개인정보취급방침]을 안내합니다.
 
@@ -228,12 +228,14 @@
                         개인정보처리방침에 동의합니다. <b>(필수)</b>
                     </label>
                 </fieldset>
-            </div>
 
-            <div class="form_t2">
-                <p>상담내용 작성</p>
-                <fieldset>
-                    <div class="write">
+                <div class="form_t2">
+                    <colgroup>
+                        <col style="width: 150px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <fieldset>
+                        <legend>상담내용 작성</legend>
                         <table>
                             <tbody>
                                 <tr>
@@ -250,17 +252,18 @@
                                 <tr>
                                     <th>이름</th>
                                     <td>
-                                        <input type="text" name="name" id="name">
+                                        <input type="text" name="name" id="name" class="inp_n">
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>이메일</th>
                                     <td>
-                                        <input type="text" name="email" id="email">
+                                        <input type="text" name="email" id="email" class="inp_e">
                                         @
                                         <select>
                                             <option value="naver.com">naver.com</option>
                                             <option value="hanmail.net">hanmail.net</option>
+                                            <option value="gmail.com">gmail.com</option>
                                             <option value="nate.com">nate.com</option>
                                         </select>
                                     </td>
@@ -268,17 +271,17 @@
                                 <tr>
                                     <th>연락처</th>
                                     <td>
-                                        <input type="text" name="tel" id="tel" maxlength="4">
+                                        <input type="text" name="tel" id="tel" maxlength="4" class="inp_c">
                                         -
-                                        <input type="text" name="tel2" id="tel2" maxlength="4">
+                                        <input type="text" name="tel2" id="tel2" maxlength="4" class="inp_c">
                                         -
-                                        <input type="text" name="tel3" id="tel3" maxlength="4">
+                                        <input type="text" name="tel3" id="tel3" maxlength="4" class="inp_c">
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>제목</th>
                                     <td>
-                                        <input type="text" name="title" id="title">
+                                        <input type="text" name="title" id="title" class="inp_t">
                                     </td>
                                 </tr>
                                 <tr>
@@ -290,22 +293,23 @@
                                 <tr>
                                     <th>파일첨부</th>
                                     <td>
-                                        <input type="file" name="upfile" id="upfile">
+                                        <input type="file" name="upfile" id="upfile" class="inp_f">
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </fieldset>
+
+                    </fieldset>
+                </div>
             </div>
             <div class="click">
                 <div>
-                    <input type="submit" name="send" id="send" value="확인">
+                    <input type="submit" name="send" id="send" value="확인" class="inp_s">
                 </div>
             </div>
         </form>
     </div>
-
+    <footer></footer>
 </body>
 
 </html>
