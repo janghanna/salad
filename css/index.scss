@@ -143,35 +143,69 @@ body {
         color: #fff;
     }
 
-    .sns {
+    .delivery {
         width: 100%;
-        margin: 0 auto;
-        padding-bottom: 95px;
 
-        h3 {
-            font-size: 38px;
-            list-style: 1.1em;
+        .imgbox {
+            width: 80%;
+            margin: 0 auto;
             text-align: center;
-            vertical-align: middle;
+            padding-top: 2%;
+            padding-bottom: 2%;
 
-            strong {
-                color: #68b445;
-                margin: 0;
-            }
+            figure {
+                width: 100%;
+                display: inline;
+                overflow: hidden;
 
-            span {
-                color: #333;
-                margin-left: 8px;
-            }
+                // margin: 0;
+                // margin: 0 auto
+                a {
+                    width: 100%;
 
-            a {
-                display: inline-block;
+                    // margin: 0 auto;
+                    img {
+                        width: 10%;
+                    }
 
-                img {
-                    width: 41px;
-                    vertical-align: middle;
+                    img:hover {
+                        transform: scale(1.1);
+                        transition: .5s;
+                    }
                 }
             }
         }
     }
+
+    // .sns {
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     padding-bottom: 2%;
+
+    //     h3 {
+    //         font-size: 38px;
+    //         list-style: 1.1em;
+    //         text-align: center;
+    //         vertical-align: middle;
+
+    //         strong {
+    //             color: #68b445;
+    //             margin: 0;
+    //         }
+
+    //         span {
+    //             color: #333;
+    //             margin-left: 8px;
+    //         }
+
+    //         a {
+    //             display: inline-block;
+
+    //             img {
+    //                 width: 41px;
+    //                 vertical-align: middle;
+    //             }
+    //         }
+    //     }
+    // }
 }

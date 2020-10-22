@@ -85,7 +85,6 @@
   border: none;
   margin-bottom: 50px;
   padding: 0;
-  margin: 0;
 }
 
 .main_content .form_t1 fieldset legend {
@@ -121,7 +120,6 @@
   border: none;
   margin-bottom: 50px;
   padding: 0;
-  margin: 0;
 }
 
 .main_content .form_t1 .form_t2 fieldset legend {
@@ -139,6 +137,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  border: 2px solid green;
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr th {
@@ -191,11 +190,11 @@
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr td .inp_e {
-  width: 10%;
+  width: 15%;
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr td .inp_c {
-  width: 10%;
+  width: 20%;
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr td .inp_t {

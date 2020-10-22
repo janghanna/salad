@@ -84,7 +84,6 @@
             border: none;
             margin-bottom: 50px;
             padding: 0;
-            margin: 0;
 
             legend {
                 font-size: 20px;
@@ -119,7 +118,6 @@
                 border: none;
                 margin-bottom: 50px;
                 padding: 0;
-                margin: 0;
 
                 legend {
                     font-size: 20px;
@@ -135,6 +133,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         text-align: center;
+                        border: 2px solid green;
 
                         th {
                             background: #f7f7f7;
@@ -183,11 +182,11 @@
                             }
 
                             .inp_e {
-                                width: 10%;
+                                width: 15%;
                             }
 
                             .inp_c {
-                                width: 10%;
+                                width: 20%;
                             }
 
                             .inp_t {
@@ -198,7 +197,9 @@
                                 border: 1px solid #ddd;
                                 width: 100%;
                                 padding: 1% 0 4% 1%;
-                                //위 오른 아래 왼                           
+
+                                //위 오른 아래 왼
+                           
                             }
                         }
                     }
@@ -226,9 +227,10 @@
                 border-radius: 10px;
                 color: #fff !important;
             }
-            .inp_s:hover{
+
+            .inp_s:hover {
                 background: #464646;
-                transition: .5s;                
+                transition: .5s;
             }
         }
     }

@@ -46,15 +46,15 @@ $(function () {
         });
 
         //sub_nav
-        $('#s_n_1').on('mouseover', function(){
-            $('#s_n_a').slideDown(100);
-            // $('#s_n_a').stop().slideUp(100);
+        $('#s_n_1').click(function(){
+            $('#s_n_a').slideToggle();
         });
-        $('#s_n_2').on('mouseover', function(){
-            $('#s_n_b').slideDown(100);
-            // $('#s_n_b').slideUp(100);
+        $('#s_n_2').click(function(){
+            $('#s_n_b').slideToggle();
         });
 
+
+        //메뉴들 누르면 필요한애들만 색 넣어주기
         $('nav li').on('click', function (e) {
             e.preventDefault();
             localStorage.page = $(this).index() //클릭하는 li에게 순번
@@ -70,22 +70,19 @@ $(function () {
             }
         });
 
-        // $('#s_n_a').on('click', function (e){
-        //     e.preventDefault();
-        //     localStorage.page = $(this).index()
+        $('#s_n_a a').on('click', function (e){
+            e.preventDefault();
+            localStorage.page = $(this).index();
 
-        //     if(e.target.nodeName == 'A'){
-        //         location.htef = e.target.getAttribute('href')
-        //         console.log(e.target)
-        //     }else{
-        //         localStorage.removeClass('href');
-        //     }
-        // });
+            if(e.target.nodeName == 'A'){
+                location.href = e.target.getAttribute('href')
+            }
+        });
 
         //이거는 색상 넣지 말아욤~
         $('.logo a').on('click', function () {
             //index페이지를 숫자말고 다른거로 바꾸기 
-            localStorage.page = 'main';
+            localStorage.page = '10';
             //''빈공간 말고 다른값넣어주면 못읽음 -> active빠짐
         });
         $('.gnb a').on('click', function(){

@@ -140,35 +140,36 @@ body figure:nth-of-type(3) figcaption p strong {
   color: #fff;
 }
 
-body .sns {
+body .delivery {
   width: 100%;
+}
+
+body .delivery .imgbox {
+  width: 80%;
   margin: 0 auto;
-  padding-bottom: 95px;
-}
-
-body .sns h3 {
-  font-size: 38px;
-  list-style: 1.1em;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-body .sns h3 strong {
-  color: #68b445;
-  margin: 0;
+body .delivery .imgbox figure {
+  width: 100%;
+  display: inline;
+  overflow: hidden;
 }
 
-body .sns h3 span {
-  color: #333;
-  margin-left: 8px;
+body .delivery .imgbox figure a {
+  width: 100%;
 }
 
-body .sns h3 a {
-  display: inline-block;
+body .delivery .imgbox figure a img {
+  width: 10%;
 }
 
-body .sns h3 a img {
-  width: 41px;
-  vertical-align: middle;
+body .delivery .imgbox figure a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 /*# sourceMappingURL=index.css.map */

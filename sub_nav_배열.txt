@@ -1,0 +1,10 @@
+{
+ nav:["투고샐러드","이용안내","메뉴소개"];
+ sub:[
+	["TO GO SALED", "WELCOME"],
+	["TO GO SALED", "WELCOME"],
+	["TO GO SALED", "WELCOME"],
+	["TO GO SALED", "WELCOME"]
+]
+
+json 이용

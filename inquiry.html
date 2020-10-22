@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/head_foot.js"></script>
+    <script src="js/contents.js"></script>
+    <script src="js/check.js"></script>
 </head>
 
 <header></header>
@@ -29,7 +31,7 @@
             </li>
             <li class="list">
                 <div class="list_1" id="s_n_1">
-                    <a href="use.html">지점안내</a>
+                    <a>지점안내</a>
                     <div class="list_2" id="s_n_a">
                         <a href="story.html">투고샐러드</a>
                         <a href="use.html">이용안내</a>
@@ -37,11 +39,11 @@
                         <a href="map.html">지점안내</a>
                     </div>
                 </div>
-
             </li>
+            
             <li class="list">
                 <div class="list_1" id="s_n_2">
-                    <a href="map.html">문의하기</a>
+                    <a>문의하기</a>
                     <div class="list_2" id="s_n_b">
                         <a href="map.html">매장위치</a>
                         <a href="inquiry.html">문의하기</a>
@@ -226,6 +228,7 @@
                     <label class="check">
                         <input type="checkbox" name="ck" id="ck" value="Y">
                         개인정보처리방침에 동의합니다. <b>(필수)</b>
+                        <p></p>
                     </label>
                 </fieldset>
 
@@ -271,11 +274,7 @@
                                 <tr>
                                     <th>연락처</th>
                                     <td>
-                                        <input type="text" name="tel" id="tel" maxlength="4" class="inp_c">
-                                        -
-                                        <input type="text" name="tel2" id="tel2" maxlength="4" class="inp_c">
-                                        -
-                                        <input type="text" name="tel3" id="tel3" maxlength="4" class="inp_c">
+                                        <input type="text" name="phone" id="phone" maxlength="11" placeholder="숫자만 입력해주세요." class="inp_c">
                                     </td>
                                 </tr>
                                 <tr>
