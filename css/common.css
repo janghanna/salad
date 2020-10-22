@@ -101,10 +101,9 @@ header .header nav ul li a.active{
 
 header .header .gnb {
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 20%;
     font-size: 14px;
-    text-align: left;
 }
 
 header .header .gnb a {
@@ -113,11 +112,105 @@ header .header .gnb a {
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
 }
-
-header .header .gnb a img {
-    width: 24px;
-    height: 24px;
+header .header .gnb img{
+    width: 35px;
+    /* height: 10%; */
 }
+
+.sub_nav {
+    border: 1px solid #ddd;
+    border-width: 1px 0 1px 0;
+}
+  
+.sub_nav ul {
+    width: 1200px;
+    height: 50px;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    margin: 0 auto;
+    font-size: 0;
+    padding-left: 0;
+}
+  
+.sub_nav ul .home {
+    display: inline-block;
+    height: 100%;
+    padding: 15px;
+    margin: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #f7f7f7;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  
+.sub_nav ul .home a img {
+    width: 15px;
+    height: 15px;
+}
+  
+.sub_nav ul .list {
+    position: relative;
+    width: 275px;
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    vertical-align: middle;
+    z-index: 90;
+}
+  
+.sub_nav ul .list .list_1 {
+    font-size: 15px;
+    background: url(../img/click.png) no-repeat 95%;
+}
+  
+.sub_nav ul .list .list_1 > a {
+    font-size: 15px;
+    color: #333;
+    line-height: 50px;
+}
+  
+.sub_nav ul .list .list_1 > a:nth-of-type(1) {
+    width: 200px;
+    padding: 0 60px 0 15px;
+    text-decoration: none;
+}
+  
+.sub_nav ul .list .list_1 .list_2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: calc(100% + 2px);
+    border: 1px solid #ddd;
+    border-top: none;
+    opacity: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  
+.sub_nav ul .list .list_1 .list_2 > a {
+    background: white;
+    display: block;
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+  
+.sub_nav ul .list .list_1 .list_2 > a:hover {
+    color: #333;
+    background-color: #f7f7f7;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+  
 
 body .footer {
     width: 100%;
@@ -148,4 +241,12 @@ body .footer .footer_1 .button .top {
     display: block;
     right: 65px;
     bottom: 90px;
+}
+body .footer .footer_1 .button .top a:nth-of-type(2) img{
+    width: 24px;
+    height: 24px;
+}
+body .footer .footer_1 .button .top a:nth-of-type(3) img{
+    width: 24px;
+    height: 24px;
 }

@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if (idx != img.length) idx++;
         s.style = "left:" + (-idx * 100) + "%";
 
-        if (idx == 2){
+        if (idx == 2){ 
             idx=0;
             s.style = "transition:"+"0s","left:" + (-idx * 100) + "%";
         }
