@@ -16,11 +16,13 @@ window.addEventListener('DOMContentLoaded', function () {
                 //체크 hi
                 alert("개인정보처리에 동의하셨습니다.");
                 console.log("hi");
-            } else { //아니면ㅎㅎ
-                $("input[name=choice]").prop("checked", false);
-                alert("개인정보동의를 눌러주세요.");
+            }else{
+                $("#ck").prop("checked", false);
+                //체크 hi
+                alert("필수약관에 동의하셔야합니다.");
                 console.log("gg");
             }
+            return false;
         }
         checked();
 
@@ -36,6 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
             alert(msg);
             $('input[name=' + el + ']').val('');
             $('input[name=' + el + ']').focus();
+
             //focus를 써서 잘못쓴 곳에 커서
         }
         alert("제출되었습니다. 감사합니다 ^^*")
