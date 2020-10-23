@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </li>
-            
+
             <li class="list">
                 <div class="list_1" id="s_n_2">
                     <a>문의하기</a>
@@ -58,7 +58,7 @@
             <h2>문의하기</h2>
         </div>
 
-        <form>
+        <form name="myform">
             <div class="form_t1">
                 <fieldset>
                     <legend>개인정보처리방침</legend>
@@ -245,10 +245,10 @@
                                     <th>구분</th>
                                     <td>
                                         <select>
-                                            <option value="칭찬">칭찬</option>
-                                            <option value="불만">불만</option>
-                                            <option value="제안">제안</option>
-                                            <option value="기타">기타</option>
+                                            <option value="칭찬" id="1">칭찬</option>
+                                            <option value="불만" id="2">불만</option>
+                                            <option value="제안" id="3">제안</option>
+                                            <option value="기타" id="4">기타</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -263,18 +263,21 @@
                                     <td>
                                         <input type="text" name="email" id="email" class="inp_e">
                                         @
-                                        <select>
-                                            <option value="naver.com">naver.com</option>
-                                            <option value="hanmail.net">hanmail.net</option>
-                                            <option value="gmail.com">gmail.com</option>
-                                            <option value="nate.com">nate.com</option>
+                                        <input type="text" name="email2" id="email2" class="inp_e">
+                                        <select id="select_E">
+                                            <option value="" selected="selected">직접입력</option>
+                                            <option value="naver.com" id="naver.com">naver.com</option>
+                                            <option value="hanmail.net" id="hanmail.net">hanmail.net</option>
+                                            <option value="gmail.com" id="gmail.com">gmail.com</option>
+                                            <option value="nate.com" id="nate.com">nate.com</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>연락처</th>
                                     <td>
-                                        <input type="text" name="phone" id="phone" maxlength="11" placeholder="숫자만 입력해주세요." class="inp_c">
+                                        <input type="text" name="phone" id="phone" maxlength="11"
+                                            placeholder="숫자만 입력해주세요." class="inp_c">
                                     </td>
                                 </tr>
                                 <tr>

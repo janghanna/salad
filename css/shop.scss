@@ -357,21 +357,27 @@
                         table {
                             width: 100%;
                             border-top: 1px solid #2e2e2e;
-                            border-bottom: 1px solid #ddd;
+                            // border-bottom: 1px solid #ddd;
 
 
                             tr {
-                                padding: 15px 10px;
-                                font-size: 14px;
-                                line-height: 18px;
-                                text-align: center;
-                                border: 2px solid green;
+                                *{
+                                    border: 1px solid #ddd;
+                                    border-width: 0px 0px 1px 0px;
+                                    //위, 오, 아, 왼
+                                    padding: 15px 10px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                                                       
+                                }
 
                                 th {
+                                    width: 17%;
                                     background: #f7f7f7;
                                     color: #666;
                                     font-weight: normal;
                                     padding: 15px 10px;
+                                    text-align: center;
                                 }
 
                                 td {
@@ -385,7 +391,7 @@
                                         border: 1px solid #dadada;
                                     }
 
-                                    input {
+                                    input {                                        
                                         display: inline-block;
                                         vertical-align: middle;
                                         outline: none;
@@ -401,7 +407,7 @@
                                     textarea {
                                         width: 100%;
                                         height: 300px;
-                                        font-size: 14px;
+                                        font-size: 14px;                                       
                                         line-height: 18px;
                                         padding: 15px;
                                         background: #fff;

@@ -1,8 +1,8 @@
 $(function () {
     //start     
     //header & footer 호출
-    $('header').load('/inc_head_foot.html header .header', header);
-    $('footer').load('/inc_head_foot.html footer');
+    $('header').load('/togosalad/inc_head_foot.html header .header', header);
+    $('footer').load('/togosalad/inc_head_foot.html footer');
 
     function header() {
         const head = document.querySelector('.header');

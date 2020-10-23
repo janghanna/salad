@@ -127,19 +127,26 @@
                 table {
                     width: 100%;
                     border-top: 1px solid #2e2e2e;
+                    // border-bottom: 1px solid #ddd;
 
                     tr {
-                        padding: 15px 10px;
-                        font-size: 14px;
-                        line-height: 18px;
-                        text-align: center;
-                        border: 2px solid green;
+                        * {
+                            border: 1px solid #ddd;
+                            border-width: 0px 0px 1px 0px;
+                            //위, 오, 아, 왼
+                            padding: 15px 10px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            
+                        }
 
                         th {
+                            width: 17%;
                             background: #f7f7f7;
                             color: #666;
                             font-weight: normal;
                             padding: 15px 10px;
+                            text-align: center;
                         }
 
                         td {
@@ -177,26 +184,31 @@
                                 box-sizing: border-box;
                             }
 
+                            //이름
                             .inp_n {
                                 width: 15%;
                             }
 
+                            //이메일
                             .inp_e {
                                 width: 15%;
                             }
 
+                            //연락처
                             .inp_c {
                                 width: 20%;
                             }
 
+                            //제목
                             .inp_t {
                                 width: 100%;
                             }
 
+                            //파일
                             .inp_f {
-                                border: 1px solid #ddd;
                                 width: 100%;
                                 padding: 1% 0 4% 1%;
+                                border: none;
 
                                 //위 오른 아래 왼
                            

@@ -366,22 +366,23 @@
 .sub_content .form .form_L .form_t1 .form_t2 fieldset table {
   width: 100%;
   border-top: 1px solid #2e2e2e;
-  border-bottom: 1px solid #ddd;
 }
 
-.sub_content .form .form_L .form_t1 .form_t2 fieldset table tr {
+.sub_content .form .form_L .form_t1 .form_t2 fieldset table tr * {
+  border: 1px solid #ddd;
+  border-width: 0px 0px 1px 0px;
   padding: 15px 10px;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
-  border: 2px solid green;
 }
 
 .sub_content .form .form_L .form_t1 .form_t2 fieldset table tr th {
+  width: 17%;
   background: #f7f7f7;
   color: #666;
   font-weight: normal;
   padding: 15px 10px;
+  text-align: center;
 }
 
 .sub_content .form .form_L .form_t1 .form_t2 fieldset table tr td {

@@ -132,19 +132,21 @@
   border-top: 1px solid #2e2e2e;
 }
 
-.main_content .form_t1 .form_t2 fieldset table tr {
+.main_content .form_t1 .form_t2 fieldset table tr * {
+  border: 1px solid #ddd;
+  border-width: 0px 0px 1px 0px;
   padding: 15px 10px;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
-  border: 2px solid green;
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr th {
+  width: 17%;
   background: #f7f7f7;
   color: #666;
   font-weight: normal;
   padding: 15px 10px;
+  text-align: center;
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr td {
@@ -202,9 +204,9 @@
 }
 
 .main_content .form_t1 .form_t2 fieldset table tr td .inp_f {
-  border: 1px solid #ddd;
   width: 100%;
   padding: 1% 0 4% 1%;
+  border: none;
 }
 
 .main_content .click {

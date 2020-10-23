@@ -86,7 +86,7 @@
                     가맹 상담을 원하시는 경우 아래 신청양식을 입력해주시면
                     24시간 이내에 연락 드리겠습니다
                 </small>
-                <form>
+                <form name="myform">
                     <div class="form_t1">
                         <fieldset>
                             <legend>개인정보처리방침</legend>
@@ -300,18 +300,21 @@
                                             <td>
                                                 <input type="text" name="email" id="email" class="inp_e">
                                                 @
-                                                <select>
-                                                    <option value="naver.com">naver.com</option>
-                                                    <option value="hanmail.net">hanmail.net</option>
-                                                    <option value="gmail.com">gmail.com</option>
-                                                    <option value="nate.com">nate.com</option>
+                                                <input type="text" name="email2" id="email2" class="inp_e">
+                                                <select id="select_E">
+                                                    <option value="" selected="selected">직접입력</option>
+                                                    <option value="naver.com" id="naver.com">naver.com</option>
+                                                    <option value="hanmail.net" id="hanmail.net">hanmail.net</option>
+                                                    <option value="gmail.com" id="gmail.com">gmail.com</option>
+                                                    <option value="nate.com" id="nate.com">nate.com</option>
                                                 </select>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>연락처</th>
                                             <td>
-                                                <input type="text" name="phone" id="phone" maxlength="11" placeholder="숫자만 입력해주세요." class="inp_c">
+                                                <input type="text" name="phone" id="phone" maxlength="11"
+                                                    placeholder="숫자만 입력해주세요." class="inp_c">
                                             </td>
                                         </tr>
                                         <tr>
@@ -335,11 +338,11 @@
                                             <td>
                                                 <select>
                                                     <option value="">선택해주세요.</option>
-                                                    <option value="인터넷검색">인터넷검색</option>
-                                                    <option value="인스타그램">인스타그램</option>
-                                                    <option value="페이스북">페이스북</option>
-                                                    <option value="방문경험있음">방문경험잆음</option>
-                                                    <option value="방문경험없음">방문경험없음</option>
+                                                    <option value="인터넷검색" id="ent">인터넷검색</option>
+                                                    <option value="인스타그램" id="ins">인스타그램</option>
+                                                    <option value="페이스북" id="face">페이스북</option>
+                                                    <option value="방문경험있음" id="yes">방문경험있음</option>
+                                                    <option value="방문경험없음" id="no">방문경험없음</option>
                                                 </select>
                                             </td>
                                         </tr>

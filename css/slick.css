@@ -174,4 +174,6 @@
     padding: 0;
     border: none;
 }
-.slide .slick-dots li.slick-active{}
+.slide .slick-dots li.slick-active{
+    background: blue;
+}
