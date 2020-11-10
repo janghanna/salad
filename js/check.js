@@ -1,4 +1,4 @@
-$(function () {
+$(function () { 
     $("#select_E").change(function(){
         if($("#select_E").val()=="1"){
             $("#email2").attr("1",false);

@@ -9,22 +9,15 @@ window.addEventListener('DOMContentLoaded', function () {
     function funCheck(e) {
         e.preventDefault();
 
-        function checked() {
-            if ($("#ck").prop("checked")) {
-                //갠정보 동의
-                $("#ck").prop("checked", true);
-                //체크 hi
-                alert("개인정보처리에 동의하셨습니다.");
-                console.log("hi");
-            }else{
-                $("#ck").prop("checked", false);
-                //체크 hi
+        
+            if (!$("#ck").prop("checked")) {
+               //안체크 gg
                 alert("필수약관에 동의하셔야합니다.");
+
                 console.log("gg");
+                return;
             }
-            return false;
-        }
-        checked();
+       
 
         var name = $('input[name=name]').val();
         var email = $('input[name=email]').val() + "@" + $('input[name=email2]').val();
